@@ -1,0 +1,13 @@
+version: '3.8'  # Actualizamos a una versión compatible y reciente
+services:
+  backend:
+    build:
+      context: ./backend
+    ports:
+      - "5000:5000"
+
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "3000:3000"
